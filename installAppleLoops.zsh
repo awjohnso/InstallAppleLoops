@@ -14,7 +14,7 @@
 # Requirements:
 # In oder for this to work use appleloops (https://github.com/carlashley/appleloops)
 # by Carl Carlashley to create the DMG files for the mandatory and optional loops.
-# Compress the DMG files into a zip file and store them on a server. Also the DMG 
+# Compress the DMG files into a zip file and store them on a web server. Also the DMG 
 # volume must be called appleloops.
 #
 # Reasoning:
@@ -41,7 +41,7 @@ myURL="${5}"
 /usr/bin/curl ${myURL}/${myLoops}.zip -o /private/tmp/${myLoops}.zip
 
 	# Check to see if it got downloaded.
-if [ ! -e "/private/tmp/${myLoops}.zip" ];
+if [ ! -e "/private/tmp/${myLoops}.zip" ]; then
 	/bin/echo "ERROR: ${myLoops}.zip was not found in /private/tmp."
 	exit 1
 fi
