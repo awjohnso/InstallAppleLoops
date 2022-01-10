@@ -3,7 +3,7 @@
 - Authtor: Andrew W. Johnson
 - Date: 2022.01.10
 - Version: 1.00
-- Organizations: Stony Brook University/DoIT
+- Organization: Stony Brook University/DoIT
 ---
 **What this script does:**
 
